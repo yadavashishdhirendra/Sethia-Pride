@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Nunito_semiBold;
+    src: url('../Fonts/Nunito-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand>img {
+    width: 150px;
+}
+
+.nav-item>a {
+    font-family: 'Nunito_semiBold';
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #2B2B2B;
+}
+
+.header-container {
+    border: 0;
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=1);
+    /* IE6-9 */
+}
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 3rem;
+        padding-left: 1rem;
+    }
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon>i {
+    font-size: 30px;
+}
+
+.navbar-container {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+}
+
+.banner-container {
+    position: relative;
+    top: 80px;
+}
+
+.sticky-container {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.sticky-image>img {
+    width: 300px;
+}
+
+.header-py-container {
+    margin-top: 80px;
+    background-color: #0c2359;
+    display: none;
+}
+
+
+#py_header>.nav-item>a {
+    color: #FFFF;
+    font-size: 14px;
+}
+
+.nav-item>a>i {
+    font-size: 14px;
+    color: #caa354 !important;
+    margin-right: 10px;
+}
+
+.alignments-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container>button {
+    padding: 8px 30px;
+    font-family: 'Nunito_semiBold';
+    font-size: 14px;
+    letter-spacing: 0.03rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #ED3833;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #fff;
+    z-index: 0;
+    font-weight: 600;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.button-container>button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fffffff1, transparent);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)skew(-20deg);
+    -webkit-transform: translateX(-120px)skew(-20deg);
+    -moz-transform: translateX(-120px)skew(-20deg);
+    -ms-transform: translateX(-120px)skew(-20deg);
+    -o-transform: translateX(-120px)skew(-20deg);
+}
+
+.button-container>button:hover::before {
+    transform: translateX(300px)skew(-20deg);
+    -webkit-transform: translateX(300px)skew(-20deg);
+    -moz-transform: translateX(300px)skew(-20deg);
+    -ms-transform: translateX(300px)skew(-20deg);
+    -o-transform: translateX(300px)skew(-20deg);
+}
+
+.button-container>button:hover {
+    background: #ff006a;
+}
+
+.button-container>button:last-child {
+    margin-left: 2rem;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .header-py-container {
+        display: block;
+    }
+}
+
+.second-container {
+    background-image: linear-gradient(to bottom, rgba(23, 32, 54, 0.3) 0%, rgba(23, 32, 54, 1) 100%), url(https://www.sethiainfra.com/wp-content/uploads/2020/11/banner9.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    margin-bottom: 5rem;
+}
