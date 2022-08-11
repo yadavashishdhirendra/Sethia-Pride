@@ -172,7 +172,7 @@
 }
 
 .second-container {
-    background-image: linear-gradient(to bottom, rgba(23, 32, 54, 0.3) 0%, rgba(23, 32, 54, 1) 100%), url(https://www.sethiainfra.com/wp-content/uploads/2020/11/banner9.jpg);
+    background-image: linear-gradient(rgba(23, 32, 54, 0.3) 0%, rgba(23, 32, 54, 1) 100%), url(https://www.sethiainfra.com/wp-content/uploads/2020/11/banner9.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
