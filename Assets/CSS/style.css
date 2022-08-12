@@ -691,6 +691,7 @@ footer {
     font-family: 'Nunito_Regular';
     letter-spacing: 2px;
     font-size: 16px;
+    text-align: center;
 }
 
 .hover-animation-grid-row {
