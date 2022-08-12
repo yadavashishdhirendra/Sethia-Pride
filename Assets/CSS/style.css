@@ -1057,3 +1057,19 @@ main {
 .modal {
     top: 100px;
 }
+
+.sticky-button {
+    position: fixed;
+    top: 50%;
+    transform: rotate(90deg);
+    right: -70px;
+}
+
+.sticky-button>div>button {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    padding: 8px 20px;
+}
