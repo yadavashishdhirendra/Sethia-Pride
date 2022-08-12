@@ -83,6 +83,7 @@ body, html {
     background-color: white;
     width: 100%;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 
@@ -399,7 +400,7 @@ body, html {
 }
 
 footer {
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 
 .img-grid-row {
@@ -674,7 +675,7 @@ footer {
     padding: 70px 0px 70px 0px;
 }
 
-.hover-animation>.container>h4, p {
+.hover-animation>.container>h4 {
     text-align: center;
 }
 
@@ -796,7 +797,7 @@ footer {
     padding: 70px 0px 70px 0px;
 }
 
-.hover-animations>.container>h4, p {
+.hover-animations>.container>h4 {
     text-align: center;
 }
 
@@ -839,7 +840,7 @@ footer {
     font-family: 'Nunito_semiBold';
 }
 
-.saml{
+.saml {
     display: none;
 }
 
@@ -852,7 +853,8 @@ footer {
     .hover-animations>.large-display {
         display: none;
     }
-    .saml{
+
+    .saml {
         display: block;
     }
 }
@@ -866,5 +868,153 @@ footer {
     .small-display>div {
         justify-content: flex-start;
         margin-top: 15px;
+    }
+}
+
+.google-maps-grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.view-map-col {
+    background-image: linear-gradient(rgba(23, 32, 54, 0.3) 0%, rgba(23, 32, 54, 1) 100%), url('../Images/footer-bg.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 10; */
+    background-attachment: fixed;
+    position: relative;
+    top: 0px;
+    padding: 30px 0px 30px 0px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.view-map-col>h3 {
+    font-size: 38px;
+    color: #ffff;
+    font-family: 'Nunito_Bold';
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 640px) {
+    .google-maps-grid-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .view-map-col>h3 {
+        font-size: 28px;
+    }
+
+    .view-map-col>div {
+        margin-top: 0rem !important;
+    }
+}
+
+main {
+    padding: 40px 0px 40px 0px;
+    background-color: transparent;
+    background-image: -o-linear-gradient(top, #EFF1FE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#EFF1FE), to(#FFFFFF));
+    background-image: linear-gradient(180deg, #EFF1FE 0%, #FFFFFF 100%);
+}
+
+.form-grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem;
+}
+
+.grider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.form-grid-row>div>form>div>div>input {
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 40px;
+    outline: none;
+    border: 1px solid #caa354;
+    padding: 5px 10px;
+    font-family: 'Nunito_semiBold';
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.form-grid-row>div>h3 {
+    font-size: 38px;
+    color: #caa354;
+    margin-bottom: 2rem;
+    font-family: 'Nunito_Bold';
+    letter-spacing: 3px;
+}
+
+.form-submit>button {
+    margin-top: 0px !important;
+}
+
+.address-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.address-list>h4 {
+    font-family: 'Nunito_semiBold';
+    letter-spacing: 3px;
+    color: #0c2359;
+    font-size: 22px;
+}
+
+.address-list>p {
+    font-family: 'Nunito_Regular';
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #caa354;
+    height: auto;
+    padding: 10px;
+}
+
+.footer>p {
+    color: #fff;
+    font-family: 'Nunito_Regular';
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .grider {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .form-grid-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-grid-row>div>h3 {
+        font-size: 26px;
+    }
+
+    .address-list>h4 {
+        font-size: 18px;
+    }
+
+    .address-list>p {
+        font-size: 14px;
     }
 }
