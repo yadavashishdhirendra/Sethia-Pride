@@ -719,6 +719,7 @@ footer {
 .hover-animation-grid-row>div:hover {
     background-color: #0c23592b;
     cursor: pointer;
+    border-bottom: 2px solid #caa354;
 
 }
 
@@ -746,7 +747,6 @@ footer {
 #bg {
     position: relative;
     top: 0;
-    /* background-image: url('../Images/banner12.jpg'); */
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -754,4 +754,117 @@ footer {
     height: 100vh;
     display: flex;
     width: 100%;
+    overflow: hidden;
+}
+
+#bgs {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('../Images/top-view1a.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0px;
+    padding: 70px 0px 70px 0px;
+}
+
+.item>img {
+    width: 100%;
+}
+
+.hover-animations {
+    background-image: linear-gradient(rgba(6, 20, 51, 0.5) 0%, rgba(6, 20, 51, 1) 100%), url('../Images/top-view1-1.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0px;
+    padding: 70px 0px 70px 0px;
+}
+
+.hover-animations>.container>h4, p {
+    text-align: center;
+}
+
+.hover-animations>.container>h4 {
+    color: #caa354;
+    letter-spacing: 2px;
+    font-family: 'Nunito_semiBold';
+    font-size: 22px;
+}
+
+.hover-animations>.container>p {
+    color: #caa354;
+    font-family: 'Nunito_Regular';
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.small-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.small-display>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.small-display>div>i {
+    color: #caa354;
+    font-size: 22px;
+}
+
+.small-display>div>p {
+    font-size: 20px;
+    color: #caa354;
+    margin-bottom: 0rem;
+    font-family: 'Nunito_semiBold';
+}
+
+.saml{
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .hover-animation>.large-display {
+        display: none;
+        padding: 0;
+    }
+
+    .hover-animations>.large-display {
+        display: none;
+    }
+    .saml{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .small-display {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .small-display>div {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
 }

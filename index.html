@@ -16,6 +16,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+    <!-- Owl Carousel CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous">
+
+
     <title>Hello, world!</title>
 
     <link rel="stylesheet" href="./Assets/CSS/style.css">
@@ -260,7 +271,23 @@
 
 
     <div class="hover-animation">
-        <div class="container">
+        <div class="container saml">
+            <div class="small-display">
+                <div>
+                    <i aria-hidden="true" class="fas fa-border-all"></i>&nbsp;&nbsp;&nbsp;
+                    <p>Living Room</p>
+                </div>
+                <div>
+                    <i aria-hidden="true" class="fas fa-bed"></i>&nbsp;&nbsp;&nbsp;
+                    <p>Bedroom</p>
+                </div>
+                <div>
+                    <i aria-hidden="true" class="fas fa-coffee"></i>&nbsp;&nbsp;&nbsp;
+                    <p>Kitchen</p>
+                </div>
+            </div>
+        </div>
+        <div class="container large-display">
             <h4>INTERNAL AMENITIES</h4>
             <p>Fully furnished flats by Sethia Infrastructure</p>
             <div class="hover-animation-grid-row" id="bg">
@@ -275,6 +302,49 @@
                 <div class="transform" id="kitchen">
                     <i aria-hidden="true" class="fas fa-coffee"></i>
                     <p>Kitchen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="carousel-container">
+        <div class="container">
+
+        </div>
+    </div> -->
+
+
+    <div class="hover-animations">
+        <div class="container saml">
+            <div class="small-display">
+                <div>
+                    <i aria-hidden="true" class="fas fa-laptop"></i></i>&nbsp;&nbsp;&nbsp;
+                    <p>Cyber Lounge</p>
+                </div>
+                <div>
+                    <i aria-hidden="true" class="fas fa-dumbbell"></i>&nbsp;&nbsp;&nbsp;
+                    <p>Private Gym</p>
+                </div>
+                <div>
+                    <i aria-hidden="true" class="fas fa-chess-knight"></i>&nbsp;&nbsp;&nbsp;
+                    <p>Play Area</p>
+                </div>
+            </div>
+        </div>
+        <div class="container large-display">
+            <h4>EXTERNAL AMENITIES</h4>
+            <div class="hover-animation-grid-row" id="bgs">
+                <div class="transform" id="cyber">
+                    <i aria-hidden="true" class="fas fa-laptop"></i>
+                    <p>Cyber Lounge</p>
+                </div>
+                <div class="transform" id="gym">
+                    <i aria-hidden="true" class="fas fa-dumbbell"></i>
+                    <p>Private Gym</p>
+                </div>
+                <div class="transform" id="play">
+                    <i aria-hidden="true" class="fas fa-chess-knight"></i>
+                    <p>Play Area</p>
                 </div>
             </div>
         </div>
@@ -307,25 +377,59 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-        var cat = 'https://images.unsplash.com/photo-1485198963969-3f6b12e49abb'
-        var dog = 'https://images.unsplash.com/photo-1469225208447-8329cbd3cb3a'
-        var rabbit = 'https://images.unsplash.com/photo-1478754351612-f8b7577a3859'
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
 
+    <script>
         $('#living_room').hover(function () {
             $('#bg').css('background-image',
-                "url('https://images.unsplash.com/photo-1485198963969-3f6b12e49abb')");
+                "url('./Assets/Images/liiving-room.jpg')");
         });
 
         $('#bedroom').hover(function () {
             $('#bg').css('background-image',
-                "url('https://images.unsplash.com/photo-1469225208447-8329cbd3cb3a')");
+                "url('./Assets/Images/sethia-aashray-bedroom.jpg')");
         });
 
         $('#kitchen').hover(function () {
             $('#bg').css('background-image',
-                "url('https://images.unsplash.com/photo-1478754351612-f8b7577a3859')");
+                "url('./Assets/Images/kitchen.jpg')");
         });
+
+        $('#cyber').hover(function () {
+            $('#bgs').css('background-image',
+                "url('./Assets/Images/cyber-lounge1a.jpg')");
+        });
+
+        $('#gym').hover(function () {
+            $('#bgs').css('background-image',
+                "url('./Assets/Images/gym.jpg')");
+        });
+
+        $('#play').hover(function () {
+            $('#bgs').css('background-image',
+                "url('./Assets/Images/play-area2.jpg')");
+        });
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
     </script>
 </body>
 
